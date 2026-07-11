@@ -1,0 +1,152 @@
+.top-navbar {
+  display: flex;
+  background-color: #f8f9fa;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8vh;
+}
+
+.nav-left {
+  margin-right: 10vw;
+}
+
+#section1-home {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+.section1-home-left {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  margin-right: 10vw;
+}
+
+.Kanae {
+  font-family: "cormorant grand", serif;
+  font-style: italic;
+  font-size: 3.5rem;
+}
+
+.statbox {
+  margin-top: 10vh;
+}
+.statbox .row {
+  display: flex;
+  gap: 1vw;
+}
+.statcol {
+  background-color: #0b3677;
+  height: 10vh;
+  align-items: center;
+  border-radius: 2.5px;
+  color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1vh;
+}
+
+.statbox p {
+  margin-top: 0.1vh;
+}
+
+.statbox h2 {
+  margin-top: 0.1vh;
+}
+
+footer {
+  background: #eae7e7;
+  color: #000000;
+  border-top: 3px solid #0b3677;
+  margin-top: 5vh;
+}
+
+.footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer-author {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.footer-author .name {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.footer-author .role {
+  font-size: 0.72rem;
+  color: #000000;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.footer-contact a {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: #000000;
+  text-decoration: none;
+  font-size: 0.82rem;
+  transition: color 0.15s;
+}
+
+.footer-contact a:hover {
+  color: #e8e4de;
+}
+
+.footer-contact .icon {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 0.7rem;
+  color: #0d6efd;
+  transition:
+    border-color 0.15s,
+    background 0.15s;
+}
+
+.footer-contact a:hover .icon {
+  border-color: #0d6efd;
+  background: rgba(59, 97, 212, 0.1);
+}
+
+.footer-divider {
+  width: 1px;
+  height: 60px;
+  background: #2e2e2e;
+  flex-shrink: 0;
+}
+
+.footer-copy {
+  font-size: 0.7rem;
+  color: #555;
+  letter-spacing: 0.06em;
+  text-align: right;
+}

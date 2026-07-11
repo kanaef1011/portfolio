@@ -1,0 +1,282 @@
+@import url("https://googleapis.com");
+
+.top-navbar {
+  display: flex;
+  background-color: #f8f9fa;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8vh;
+}
+.section-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #1e5ebf;
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.nav-left {
+  margin-right: 10vw;
+}
+
+footer {
+  background: #eae7e7;
+  color: #000000;
+  border-top: 3px solid #0d6efd;
+}
+
+.footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer-author {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.footer-author .name {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.footer-author .role {
+  font-size: 0.72rem;
+  color: #000000;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.footer-contact a {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: #000000;
+  text-decoration: none;
+  font-size: 0.82rem;
+  transition: color 0.15s;
+}
+
+.footer-contact a:hover {
+  color: #e8e4de;
+}
+
+.footer-contact .icon {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 0.7rem;
+  color: #0d6efd;
+  transition:
+    border-color 0.15s,
+    background 0.15s;
+}
+
+.footer-contact a:hover .icon {
+  border-color: #0d6efd;
+  background: rgba(59, 97, 212, 0.1);
+}
+
+.footer-divider {
+  width: 1px;
+  height: 60px;
+  background: #2e2e2e;
+  flex-shrink: 0;
+}
+
+.footer-copy {
+  font-size: 0.7rem;
+  color: #555;
+  letter-spacing: 0.06em;
+  text-align: right;
+}
+
+/* Page */
+
+.pageheader {
+  background-color: #0b3677;
+  padding: 6rem 3rem 4rem;
+  margin-top: 8vh;
+}
+
+.page-title {
+  font-size: 3.5rem;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+}
+
+.page-title em {
+  color: #c3dcf6;
+}
+.page-summary {
+  color: #d6d4d4;
+  margin-top: 1.5rem;
+}
+.snapshot {
+  display: flex;
+  gap: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: fit-content;
+}
+.snapshot-item {
+  padding: 1.2rem 2rem;
+  padding-top: 0.5rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.snapshot-item:hover {
+  background-color: #ffffff;
+  color: #0b3677;
+}
+
+.snapshot-item:hover span {
+  background-color: #ffffff;
+  color: #0b3677;
+}
+
+.snap-label {
+  display: block;
+  color: #e8e4e4;
+  font-size: 0.7rem;
+}
+
+.snap-value {
+  color: #ffffff;
+  display: block;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* School */
+.school-section {
+  background-color: rgba(1, 39, 255, 0.041);
+  min-height: 100%;
+  padding-bottom: 4rem;
+}
+
+.school-title {
+  font-family: "cormorant garamond", serif;
+  margin-left: 3rem;
+  color: #0b3677;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.school-desc {
+  color: #0b3677;
+}
+.school-card {
+  background-color: #ffffff;
+  border-left: 3px solid #0d6efd;
+  padding: 2rem 3rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.school-grades {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.grade-pill {
+  border: 2px solid #4e85d8;
+  background-color: rgba(1, 39, 255, 0.041);
+  text-align: center;
+  padding: 0.5rem;
+  width: 5rem;
+  height: 5rem;
+}
+
+.grade-pill:hover {
+  background-color: #0b3677;
+}
+
+.grade-pill:hover span {
+  color: white;
+}
+
+.grade-label {
+  display: block;
+  font-size: 0.6rem;
+}
+
+.grade-value {
+  display: block;
+  font-family: "cormorant garamond", serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #0b3677;
+}
+/* Awards */
+.awards-section {
+  background-color: #0b3677;
+  padding: 3rem;
+  padding-top: 5rem;
+}
+
+.awards-title {
+  color: white;
+  font-family: "cormorant garamond", serif;
+  margin-bottom: 2rem;
+}
+.award-img {
+  width: 100%;
+  height: 11rem;
+  object-fit: cover;
+}
+.award-card {
+  border: 1.5px solid #ffffff3d;
+  width: 20rem;
+  padding: 1.5rem;
+}
+
+.award-card:hover {
+  background-color: #ffffff47;
+}
+
+.award-name {
+  color: white;
+  font-size: 1rem;
+}
+
+.award-details {
+  color: rgba(255, 255, 255, 0.646);
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.awards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}

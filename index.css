@@ -14,41 +14,64 @@
 }
 
 #section1-home {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 50vw 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "left  right"
+    "stats right";
+  column-gap: 0vw;
   margin-top: 10vh;
 }
 
-.section1-home-left {
-  width: 50vw;
+.section1-home-left-content {
+  grid-area: left;
+  margin-left: 35px;
   display: flex;
-  align-items: center;
-  margin-right: 10vw;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 100px;
+}
+
+.statbox {
+  grid-area: stats;
+  padding: 0;
+  width: 100%;
+  margin-left: 0;
 }
 
 .Kanae {
   font-family: "cormorant grand", serif;
   font-style: italic;
-  font-size: 3.5rem;
+  font-size: 5vw;
 }
-
-.statbox {
-  margin-top: 10vh;
+.section1-home-left-content p {
+  font-size: 1.5vw;
 }
 .statbox .row {
+  gap: 5px;
+  margin-left: 35px;
+}
+.section1-home-right {
+  grid-area: right;
   display: flex;
-  gap: 1vw;
+  align-items: start;
+  justify-content: center;
+  flex-shrink: 0; /* don't let it get squeezed by the left column */
 }
 .statcol {
   background-color: #0b3677;
-  height: 10vh;
+  height: 100px;
   align-items: center;
   border-radius: 2.5px;
   color: #f8f9fa;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 1vh;
+  padding: 10px;
+  width: 15vw;
+  flex-shrink: 0;
+  min-width: 150px;
 }
 
 .statbox p {
@@ -149,4 +172,21 @@ footer {
   color: #555;
   letter-spacing: 0.06em;
   text-align: right;
+}
+
+@media (max-width: 964px) {
+  #section1-home {
+    grid-template-areas:
+      "left  right"
+      "stats stats";
+  }
+  .section1-home-left-content {
+    margin-bottom: 70px;
+  }
+  .Kanae {
+    font-size: 6vw;
+  }
+  .section1-home-left-content p {
+    font-size: 2vw;
+  }
 }

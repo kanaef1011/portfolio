@@ -81,6 +81,9 @@
 .statbox h2 {
   margin-top: 0.1vh;
 }
+.download-cv {
+  width: 170px;
+}
 
 footer {
   background: #eae7e7;
@@ -187,6 +190,43 @@ footer {
     font-size: 6vw;
   }
   .section1-home-left-content p {
-    font-size: 2vw;
+    font-size: 2.5vw;
+  }
+  .download-cv {
+    width: 15vw;
+    font-size: max(2vw, 12px);
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 550px) {
+  .statcol {
+    min-width: 120px;
+  }
+
+  .statcol h2 {
+    font-size: 25px;
+  }
+
+  .statcol p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .statcol {
+    min-width: 100px;
+    height: 80px;
+  }
+  .statcol h2 {
+    font-size: 20px;
+  }
+
+  .statcol p {
+    font-size: 10px;
+  }
+
+  .section1-home-left-content {
+    margin-bottom: 50px;
   }
 }

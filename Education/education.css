@@ -143,13 +143,16 @@ footer {
   display: flex;
   gap: 0;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  width: fit-content;
+  max-width: 100%;
+  overflow-x: auto;
+  flex-wrap: nowrap;
 }
 .snapshot-item {
   padding: 1.2rem 2rem;
   padding-top: 0.5rem;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
+  flex-shrink: 0;
 }
 
 .snapshot-item:hover {
@@ -206,6 +209,9 @@ footer {
   display: flex;
   gap: 2rem;
   margin-top: 1.5rem;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  max-width: 100%;
 }
 
 .grade-pill {
@@ -215,6 +221,7 @@ footer {
   padding: 0.5rem;
   width: 5rem;
   height: 5rem;
+  flex-shrink: 0;
 }
 
 .grade-pill:hover {

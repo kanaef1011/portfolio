@@ -31,7 +31,8 @@ body {
 }
 
 .experience-left {
-  width: 30vw;
+  width: 40vw;
+  margin-right: 5vw;
 }
 
 .experience-img {
@@ -50,24 +51,29 @@ body {
 }
 
 .experience-right {
-  width: 30vw;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 5vw;
   text-align: right;
 }
 
 .years-box {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   background-color: #0b3677;
   border-radius: 15px;
-  width: 10vw;
-  height: 3vh;
-  margin-bottom: 1vh;
+  width: max(10vw, 110px);
+  height: 30px;
+  margin-bottom: 10px;
+  font-size: max(1.2vw, 12px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .years-box p {
   color: #f8f9fa;
+  margin-bottom: 0;
 }
 
 footer {
@@ -170,4 +176,13 @@ footer {
 .experience-box-right h2 {
   font-family: "cormorant grand", serif;
   font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .experience-description {
+    font-size: 15px;
+  }
+  .years-box h2 {
+    font-size: 25px;
+  }
 }

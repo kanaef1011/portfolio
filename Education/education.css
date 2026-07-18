@@ -256,9 +256,15 @@ footer {
   margin-bottom: 2rem;
 }
 .award-img {
+  height: 100%;
+  width: auto;
+}
+.award-img-container {
   width: 100%;
   height: 11rem;
-  object-fit: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 .award-card {
   border: 1.5px solid #ffffff3d;
